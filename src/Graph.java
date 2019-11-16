@@ -18,11 +18,7 @@ public class Graph
     //new option
     public Graph (File f)
     {
-        try {
-            Scanner sc = new Scanner(file);
-            boolean begin = true;
-        }
-        catch
+
     }
     public Graph()
     {

@@ -16,6 +16,7 @@ public class GraphTests {
         printGraph(g);
         */
         //New Stuff with Edges and Vertices
+        //Testing basic stuff:
         Edge e  = new Edge(1,2);
         Edge e2 = new Edge(1,2);
         System.out.println(e.equals(e2));
@@ -55,11 +56,11 @@ public class GraphTests {
         }});
         g3.createAdjMatrix();
         g3.printAdjMatrix();
-        System.out.println("test");
-        g3.BFS(0);
+        System.out.println("test of first files:");
         System.out.print("userdir"+System.getProperty("user.home"));
         File file = new File("/home/dominik/IdeaProjects/Graphen/src/K5.txt");
         File file2 = new File("/home/dominik/IdeaProjects/Graphen/src/primkruskal.txt");
+        File file3 = new File("/home/dominik/IdeaProjects/Graphen/src/tgraph.txt");
         Graph g6 = new Graph(file2,true);
         Graph g5 = new Graph(file,false);
         g5.createAdjMatrix();
@@ -68,20 +69,21 @@ public class GraphTests {
         g6.printAdjMatrix();
         g5.createEdgeList();
         System.out.println("BFS für K5");
-        g5.BFS(0);
+      //  g5.BFS(1);
         //BFS G6
         System.out.println("BFS für primkruskal");
-        g6.BFS(0);
+       // g6.BFS(1);
         System.out.println("Hier beginnt DFS!");
-        g6.DFS(0);
-
+        g6.DFS(1,4);
+        System.out.println("_______________________________________TEST_______________________________");
+        Graph g15 = new Graph(file3,true);
+        g15.BFS(1);
+        g15.saveGraphsearch("Testgraph");
+        g15.DFS(1,4);
+        g15.SSC();
 
         System.out.println("_____");
 
-
-        g3.DFS(2);
-        System.out.println("_______________");
-        g5.DFS(0);
         //topological search
         Graph g7 = new Graph();
         g7.addVertex(new Vertex(0));
@@ -100,9 +102,9 @@ public class GraphTests {
             add(new Edge(5,2));
             add(new Edge(5,0));
         }});
-        g7.createAdjMatrix();
+       /* g7.createAdjMatrix();
         g7.printAdjMatrix();
-        g7.DFS(5);
+        g7.DFS(5,1);
         g7.topologicalSort();
         Graph g8 = g7.transpose();
         g8.createAdjMatrix();
@@ -123,13 +125,15 @@ public class GraphTests {
             add(new Edge(3,4));
         }});
         g9.addVertex(new Vertex(4));
-        g9.SSC();
-        System.out.println("cut");
+        System.out.println("SSC________________");
+        g9.SSC();*/
         //Prim Kruskal
+        System.out.println("KruskalTEST_________________________________________________:");
         Graph g10 = new Graph(file2,true);
         g7.createEdgeList();
         g10.Kruskal();
         System.out.println("____");
+        System.out.println("PrimTEST______________________________________________________");
         Graph g11 = new Graph(file2,true);
         g11.Prim();
         g11.saveGraph("Prim");
@@ -142,21 +146,50 @@ public class GraphTests {
             add(new Edge(0,7,8));
         }});*/
        //Shortest Path
+        System.out.println("Bellmann");
         File fbellmann = new File("./src/bellmannford.txt");
         Graph g12 = new Graph(fbellmann,true);
         g12.createEdgeList();
         g12.bellmanFord(1);
-        System.out.println("test");
+        System.out.println("Floyd:");
         File floyd = new File("./src/FloydWarshall.txt");
         Graph g13 = new Graph(floyd,true);
         g13.floydWarshall();
-       /* File spider = new File("./src/spider.txt");
+        System.out.println("Dijkstra:");
+        File dijkstra = new File("./src/dijkstra.txt");
+        Graph g14 = new Graph(dijkstra,true);
+        g14.dijkstra(1);
+
+        //Big graph tests
+        /*File spider = new File("./src/spider.txt");
         Graph gspider = new Graph(spider,true);
         gspider.createEdgeList();
-        gspider.Kruskal();
+        gspider.BFS(1);
+        gspider.saveGraphsearch("SpiderBFS");*/
+       // gspider.Kruskal();
         File ggrid = new File("./src/grid.txt");
         Graph grid = new Graph(ggrid,true);
-        grid.bellmanFord(1);*/
+        //grid.bellmanFord(1);
+        grid.BFS(1);
+        grid.saveGraphsearch("gridBFS");
+        grid.Kruskal();
+        //Grid topo
+        System.out.println("________________Grid DSF_________________");
+        grid.DFS(1,2400);
+        System.out.println("__________________Grid Topsorted____________________________");
+        grid.printTopsortedList();
+        System.out.println("_________________________GRID SSC________________________________");
+        grid.SSC();
+        System.out.println("_______________________GRID Dijkstra");
+        grid.dijkstra(1);
+        System.out.println("_____________________GRID FloyDWarshall__________________");
+        //grid.floydWarshall(); // Dauert ewig
+        System.out.println("___________________________Grid Bellmann___________________");
+        grid.bellmanFord(2400);
+
+        // Dot output is enables for BFS, Prim, Kruskal and DFS
+
+
 
 
 

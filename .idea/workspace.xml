@@ -1,66 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02e2c6ed-b2bc-4207-b8ed-ae802e6f86b2" name="Default Changelist" comment="Added Last changes">
-      <change afterPath="$PROJECT_DIR$/GridPrim.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GridPrim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kruskal.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kruskal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prim.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpiderPrim.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spidergraph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bellmannford.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/EWeightCompartor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/FloydWarshall.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GeneratedDot/Prim.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$12.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/K33.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/META-INF/Graphen.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/bellmannford.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/grid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/primkruskal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphen/spider.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EWeightCompartor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FloydWarshall.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GeneratedDot/Prim.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VertexComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bellmannford.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/grid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primkruskal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="02e2c6ed-b2bc-4207-b8ed-ae802e6f86b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GridBFS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gridBFS.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SSC.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dijkstra.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tgraph.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Graphen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kruskal.dot" beforeDir="false" afterPath="$PROJECT_DIR$/Kruskal.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Graph1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/K5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/K5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Edge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/K33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/K33.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/K5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/K5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,8 +171,17 @@
       <workItem from="1586462439602" duration="361000" />
       <workItem from="1586507162109" duration="4221000" />
       <workItem from="1587290035686" duration="7073000" />
-      <workItem from="1587327487054" duration="10197000" />
+      <workItem from="1587327487054" duration="18281000" />
+      <workItem from="1587382601801" duration="10340000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Last changes">
+      <created>1587372877643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587372877643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,32 +226,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph1.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph.java</url>
-          <line>332</line>
-          <option name="timeStamp" value="63" />
+          <url>file://$PROJECT_DIR$/src/GraphTests.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GraphTests.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Graph.java</url>
-          <line>578</line>
-          <properties class="Graph" method="floydWarshall">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="81" />
+          <line>82</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

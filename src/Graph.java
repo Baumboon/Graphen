@@ -11,16 +11,22 @@ public class Graph
     ArrayList<Vertex> vertexlist;
     //Actual Working
     int V;
+    ArrayList<Vertex> searchlist;
     ArrayList<Edge> adjlist[];
     ArrayList<Edge> edgelist;
     int[][] adjmatrix;
     Vertex root;
+    Stack s;
+    ArrayList<Vertex> topsortedList;
+    int time;
+    Vertex sVertex;
     HashMap<Integer,ArrayList<Edge>> map;
     String graphCode;
     //new option
     public Graph (File f, boolean directed)
     {
         this.vertexlist= new ArrayList<Vertex>();
+        this.s = new Stack();
         try {
             this.edgelist = new ArrayList<Edge>();
             Scanner sc = new Scanner(f);
@@ -107,6 +113,13 @@ public class Graph
         for(int i = 0; i < vertexnumber; i++)
         {
             this.vertexlist.add(new Vertex(i));
+        }
+    }
+    public void printTopsortedList()
+    {
+        for(Vertex v : this.topsortedList)
+        {
+            System.out.println("Vertex : " + v.number );
         }
     }
     public Vertex getVertex(int num)
@@ -238,6 +251,7 @@ public class Graph
     }
     public void BFS(int vnumber)
     {
+        this.searchlist = new ArrayList<Vertex>();
         for (Vertex v: this.vertexlist) {
             v.setUnVisited();
             v.setDistance(0);
@@ -245,11 +259,12 @@ public class Graph
         this.vertexlist.get(vnumber).setVisited();
         this.vertexlist.get(vnumber).setDistance(0);
         Queue queueA = new LinkedList();
-        queueA.add(this.vertexlist.get(vnumber));
+        queueA.add(this.vertexlist.get((vnumber-1)));
         while(!queueA.isEmpty())
         {
            Vertex ver= (Vertex) queueA.remove();
            System.out.println(ver.number);
+            this.searchlist.add(this.vertexlist.get((ver.number-1)));
             for (Edge e: ver.edges) {
                 if(!this.vertexlist.get(e.dest()).visited) {
                     this.vertexlist.get(e.dest()).setVisited();
@@ -266,31 +281,45 @@ public class Graph
             }
 
         }
-        public void DFS(int vnumber)
+        public void DFS(int vnumber, int goal)
         {
-            int time = 0;
+            this.time = 0;
+            this.searchlist = new ArrayList<Vertex>();
+            this.topsortedList = new ArrayList<Vertex>();
             for (Vertex v: this.vertexlist) {
                 v.setUnVisited();
                 v.distance = 0;
+                v.setTime(0);
                 v.setPredecessorNull();
                 v.setFinishTime(0);
 
             }
-            utilDFS(vnumber,time);
+            utilDFS(vnumber,goal);
             System.out.println("test");
-
+           if(sVertex != null)
+           {
+               System.out.println("Result DFS: From End to Start");
+               Vertex v = sVertex;
+               System.out.println("ID:" + (v.number-1) + ", Time: " + v.time + ", FinishTime:" + v.finishtime);
+               while(v.getPreddessor() != null)
+               {
+                   v = v.getPreddessor();
+                   System.out.println("ID: "+ (v.number-1) + ", Time: "+ v.time + ", FinishTime:" + v.finishtime);
+               }
+           }
         }
-        public void utilDFS(int vnumber,int time)
+        public void utilDFSDot(int vnumber,int time)
         {
-            time = time+1;
-            this.vertexlist.get(vnumber).setDistance(time);
+            this.time = time+1;
+            this.vertexlist.get(vnumber).setTime(time);
             this.vertexlist.get(vnumber).setVisited();
             System.out.print(vnumber+1);
+            this.searchlist.add(this.vertexlist.get(vnumber));
             for (Edge e:this.vertexlist.get(vnumber).edges) {
                 if(!this.vertexlist.get(e.dest()).visited)
                 {
                     this.vertexlist.get(e.dest()).setPredecessor(this.vertexlist.get(e.first()));
-                    utilDFS(e.dest(),time);
+                    utilDFSDot(e.dest(),time);
                 }
             }
 
@@ -298,50 +327,32 @@ public class Graph
             time = time +1;
             this.vertexlist.get(vnumber).setFinishTime(time);
         }
-        void topologicalSort()
-        {
-            Stack s = new Stack();
-            for (Vertex v: this.vertexlist) {
-                v.setUnVisited();
-            }
-            for(int i = 0; i < this.V; i++)
+    public void utilDFS(int vnumber,int goal)
+    {
+        this.time++;
+        this.vertexlist.get(vnumber).setVisited();
+        this.vertexlist.get(vnumber).setTime(time);
+        for (Edge e:this.vertexlist.get(vnumber).edges) {
+            if(!this.vertexlist.get(e.dest()).visited)
             {
-                if(!this.vertexlist.get(i).visited)
-                {
-                  topoUtil(i,s);
-                }
+                this.vertexlist.get(e.dest()).setPredecessor(this.vertexlist.get(e.first()));
+                utilDFS(e.dest(),goal);
             }
-            while (!s.isEmpty())
-            {
-                System.out.println(s.pop());
-            }
+        }
+        s.push(vnumber);
 
-        }
-        void topoUtil(int vnumber, Stack s)
+        //System.out.println(time-1);
+        this.time++;
+        this.vertexlist.get(vnumber).setFinishTime(time);
+        topsortedList.add(0,this.vertexlist.get(vnumber));
+        if(vnumber == goal)
         {
-            this.vertexlist.get(vnumber).setVisited();
-            s.push(vnumber + 1 );
-            for(Edge e: this.vertexlist.get(vnumber).edges)
-            {
-                if(!this.vertexlist.get(e.dest()).visited)
-                {
-                    topoUtil(e.dest(), s);
-                }
-            }
+            sVertex = this.vertexlist.get(goal);
         }
-        void SSCutil(int vnumber, Stack s)
-        {
-            this.vertexlist.get(vnumber).setVisited();
-            for(Edge e : this.vertexlist.get(vnumber).edges)
-            {
-                if(! this.vertexlist.get(e.dest()).visited)
-                {
-                    SSCutil(e.dest(),s);
-                }
-            }
-            s.push(vnumber);
-        }
-        Graph transpose()
+    }
+
+
+        public Graph transpose()
         {
             Graph g = new Graph();
             for( int v = 0; v < this.V; v++)
@@ -357,35 +368,64 @@ public class Graph
             }
             return g;
         }
-        void SSC()
+        public void SSC()
         {
-            Stack s = new Stack();
+            /*Stack s = new Stack();
             for(int i = 0; i < this.V; i++)
             {
                 if(!this.vertexlist.get(i).visited) {
                     this.SSCutil(i, s);
                 }
-            }
+            }*/
+            this.DFS(1,2);
             Graph g = this.transpose();
             g.setUnvisitedNodes();
             System.out.println("cut");
-            while(!s.isEmpty())
+            ArrayList<ArrayList<Vertex>> sCCs = new ArrayList<ArrayList<Vertex>>();
+            while(!this.s.isEmpty())
             {
-                int ver = ((int)s.pop());
+                int ver = ((int)this.s.pop());
+               ArrayList<Vertex> sCC = new ArrayList<Vertex>();
                 if(!g.vertexlist.get(ver).visited) {
-                    g.utilDFS(ver, 0);
+                    g.SSCutiity(ver, sCC);
+                    sCCs.add(sCC);
                     System.out.println();
                 }
             }
+            System.out.println("The result is:");
+            for(ArrayList<Vertex> connected : sCCs)
+            {
+                System.out.println("__________________________");
+                for(Vertex v : connected)
+                {
+                    System.out.println("Ver: " + v.number);
+                }
+            }
+
         }
-        void setUnvisitedNodes()
+        private void SSCutiity(int vnumber, ArrayList<Vertex> sCC)
+        {
+            if(!this.vertexlist.get(vnumber).visited)
+            {
+                this.vertexlist.get(vnumber).setVisited();
+                for(Edge e: this.vertexlist.get(vnumber).edges)
+                {
+                    if(!this.vertexlist.get(e.dest()).visited)
+                    {
+                        SSCutiity(e.dest(),sCC);
+                    }
+                }
+                sCC.add(this.vertexlist.get(vnumber));
+            }
+        }
+        public void setUnvisitedNodes()
         {
             for(int i = 0; i < this.V; i++)
             {
                 this.vertexlist.get(i).setUnVisited();
             }
         }
-        void printEdgeList()
+       public void printEdgeList()
         {
             for(Edge e: this.edgelist)
             {
@@ -393,7 +433,7 @@ public class Graph
             }
         }
         //Minimal spanning Tree Algorithmen
-     Graph  Kruskal()
+    public Graph  Kruskal()
     {
       Graph sptree = new Graph(this.vertexlist.size());
       UnionFind<Vertex> unionFind = new UnionFind<>(new HashSet<>());
@@ -417,7 +457,7 @@ public class Graph
       sptree.printEdgeList();
       return sptree;
     }
-    int primutil(int key[], Boolean minisptree[])
+    public int primutil(int key[], Boolean minisptree[])
     {
         int min = Integer.MAX_VALUE;
         int min_ind = -1;
@@ -432,7 +472,7 @@ public class Graph
         return min_ind;
     }
     //PRIM algorithmus
-    void Prim()
+    public void Prim()
     {
         ArrayList<Edge> elist = new ArrayList<>();
        /* Graph sptree = new Graph(this.vertexlist.size());
@@ -479,6 +519,7 @@ public class Graph
        }
        this.createEdgelist2(elist);
     }
+    //Here starts convert to dot logic
     public void convertDot()
     {
       StringBuilder sb = new StringBuilder();
@@ -489,6 +530,27 @@ public class Graph
       }
       sb.append("\n}");
       this.graphCode = sb.toString();
+    }
+    public void convertSearchtoDot()
+    {
+        this.graphCode="";
+        StringBuilder sb = new StringBuilder();
+        sb.append("graph G {"+"\n");
+        int counter = 1;
+        for( Vertex v: this.searchlist)
+        {
+            counter ++;
+            if(counter <= this.searchlist.size()) {
+                sb.append((v.number+1)).append("--");
+            }
+            else
+            {
+                sb.append(v.number);
+            }
+        }
+
+        sb.append(";"+"\n}");
+        this.graphCode = sb.toString();
     }
     public void writeIntoFile(String filepath, String text)
     {
@@ -513,6 +575,12 @@ public class Graph
         this.convertDot();
         this.writeIntoFile(DIRECT + name +".dot",this.graphCode);
     }
+    public void saveGraphsearch(String name)
+    {
+        this.convertSearchtoDot();
+        this.writeIntoFile(DIRECT + name +".dot",this.graphCode);
+    }
+    //Here starts shortest path algorithms
     void bellmanFord(int source)
     {
         int dist[] = new int[this.vertexlist.size()];
@@ -554,6 +622,7 @@ public class Graph
     void dijkstra(int source)
     {
         //initialize
+        ArrayList<Vertex> vlist = new ArrayList<Vertex>();
         for(Vertex v: this.vertexlist)
         {
             v.distance = Integer.MAX_VALUE;
@@ -574,12 +643,37 @@ public class Graph
             q.add(v);
         }
 
+        while(!q.isEmpty())
+        {
+            Vertex v = q.poll();
+            vlist.add(v);
+            for(Edge e: v.edges )
+            {
+                if(q.remove(this.vertexlist.get(e.dest())))
+                {
+                    int weight = e.weight;
+                    relax(v,this.vertexlist.get(e.dest()),weight);
+                    q.add(this.vertexlist.get(e.dest()));
+                }
+            }
 
+        }
+        for(Vertex v: this.vertexlist)
+        {
+            System.out.println("Vertex:" + (v.number) +" Distanz: "+ v.distance);
+        }
+    }
+    public void relax(Vertex u, Vertex v, int w)
+    {
+        if(v.distance > u.distance+w)
+        {
+            v.distance = u.distance +w;
+            v.setPredecessor(u);
+        }
     }
     void floydWarshall()
     {
         this.createAdjMatrixWeighted();
-        this.printAdjMatrix();
         int [][] adjdist = this.copyAdjMatirx(this.adjmatrix);
         System.out.println("test");
         //Initialization
@@ -623,45 +717,7 @@ public class Graph
         }
 
     }
-    //
-    //old option
-    /*
-    public Graph(int V)
-    {
-        this.V = V;
-        this.adjlist = new ArrayList[V];
-        this.map = new HashMap<Integer,ArrayList<Edge>>();
-        for(int i = 0; i < V; i++)
-        {
-            this.adjlist[i] = new ArrayList<>();
-            this.addVertex(i);
-        }
-    }
-    public void addVertex(int V)
-    {
-        this.map.put(V, new ArrayList<Edge>());
-        this.V ++;
-    }
-    public static void addEdge(Graph g, int source, int dest)
-    {
-        Edge e = new Edge(source,dest);
-        boolean alreadyin = false;
-        for(int i = 0; i < g.adjlist[source].size(); i++)
-        {
-            if(g.adjlist[source].get(i).equals(e))
-            {
-                alreadyin = true;
-            }
-        }
-        if(!alreadyin)
-        {
-            g.adjlist[source].add(e);
-            System.out.println(""+g.adjlist[source].equals(e));
-        }else
-        {
-            System.out.println("Edge already in there");
-        }
-    }*/
+
     public static void addEdgeMap(Graph g, int source, int dest)
     {
         Edge e = new Edge(source,dest);

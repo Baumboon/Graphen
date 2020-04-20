@@ -12,6 +12,7 @@ public class Vertex
   Vertex predecessor;
   int distance;
   int finishtime;
+  int time;
   int keyValue;
   String color;
   ArrayList<Edge> edges;
@@ -21,6 +22,7 @@ public class Vertex
       this.edges = new ArrayList<Edge>();
       this.number = vertexnumber;
       this.visited = false;
+      this.time = 0;
       this.distance = Integer.MAX_VALUE;
       this.predecessor = null;
       vertexnumber ++;
@@ -30,6 +32,7 @@ public class Vertex
       this.number = number;
       this.edges = new ArrayList<Edge>();
       this.visited = false;
+      this.time = 0;
       this.distance = Integer.MAX_VALUE;
       this.predecessor = null;
       this.vertexnumber++;
@@ -40,6 +43,7 @@ public class Vertex
         this.keyValue = weight;
         this.edges = new ArrayList<Edge>();
         this.visited = false;
+        this.time = 0;
         this.distance = Integer.MAX_VALUE;
         this.predecessor = null;
         this.vertexnumber++;
@@ -50,8 +54,15 @@ public class Vertex
   }
   public void setVisited(){this.visited = true;}
   public void setUnVisited(){this.visited = false;}
+  public void setTime(int time){
+      this.time = time;
+  }
   public void setPredecessor(Vertex v){this.predecessor = v;}
   public void setPredecessorNull(){this.predecessor = null;}
+  public Vertex getPreddessor()
+  {
+      return this.predecessor;
+  }
   public void setDistance(int distance){this.distance = distance;}
   public String getName()
   {

@@ -1,4 +1,4 @@
-public class Edge {
+public class Edge implements Comparable<Edge> {
     Integer First;
     Integer Dest;
     int weight;
@@ -12,6 +12,10 @@ public class Edge {
         this.First = source;
         this.Dest = dest;
         this.weight = weight;
+    }
+    public int compareTo(Edge compare)
+    {
+        return this.weight-compare.weight;
     }
     public int[] goTo()
     {

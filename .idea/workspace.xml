@@ -1,14 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02e2c6ed-b2bc-4207-b8ed-ae802e6f86b2" name="Default Changelist" comment="">
+    <list default="true" id="02e2c6ed-b2bc-4207-b8ed-ae802e6f86b2" name="Default Changelist" comment="Added Last changes">
+      <change afterPath="$PROJECT_DIR$/GridPrim.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GridPrim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kruskal.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kruskal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prim.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpiderPrim.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spidergraph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bellmannford.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/EWeightCompartor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/FloydWarshall.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GeneratedDot/Prim.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/K33.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/META-INF/Graphen.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/bellmannford.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/grid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/primkruskal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Graphen/spider.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EWeightCompartor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FloydWarshall.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GeneratedDot/Prim.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VertexComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bellmannford.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primkruskal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Graphen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Graph1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/K5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/K5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/K33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/K33.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/K5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/K5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -18,24 +91,35 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SK5DBTT6QZ16xYhq0CcClF3VVe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jgrapht-1.3.0/lib/jgrapht-bundle-1.3.0.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -50,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Graph">
+  <component name="RunManager" selected="Application.GraphTests">
     <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Graph" />
       <module name="Graphen" />
@@ -65,10 +149,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphTests" />
+      <module name="Graphen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Graphen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphTests" />
         <item itemvalue="Application.Graph" />
         <item itemvalue="Application.Graph1" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -89,6 +189,22 @@
       <workItem from="1573908407670" duration="946000" />
       <workItem from="1573910133290" duration="602000" />
       <workItem from="1573911700806" duration="51000" />
+      <workItem from="1573911779474" duration="2785000" />
+      <workItem from="1575540491475" duration="4562000" />
+      <workItem from="1575621526854" duration="11521000" />
+      <workItem from="1575636889283" duration="6081000" />
+      <workItem from="1580493648254" duration="1002000" />
+      <workItem from="1586254355980" duration="828000" />
+      <workItem from="1586256219729" duration="66000" />
+      <workItem from="1586256313040" duration="1362000" />
+      <workItem from="1586336366402" duration="6758000" />
+      <workItem from="1586367007829" duration="6821000" />
+      <workItem from="1586427689485" duration="25084000" />
+      <workItem from="1586459527765" duration="2401000" />
+      <workItem from="1586462439602" duration="361000" />
+      <workItem from="1586507162109" duration="4221000" />
+      <workItem from="1587290035686" duration="7073000" />
+      <workItem from="1587327487054" duration="10197000" />
     </task>
     <servers />
   </component>
@@ -108,24 +224,65 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Last changes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="838" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
+    <state x="838" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/65.24.1855.1056@65.24.1855.1056" />
+    <state x="580" y="197" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" />
+    <state x="580" y="197" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/65.24.1855.1056@65.24.1855.1056" />
+    <state x="780" y="297" key="FileChooserDialogImpl" />
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" />
+    <state width="1809" height="268" key="GridCell.Tab.0.bottom" />
+    <state width="1809" height="268" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" />
+    <state width="1809" height="268" key="GridCell.Tab.0.center" />
+    <state width="1809" height="268" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" />
+    <state width="1809" height="268" key="GridCell.Tab.0.left" />
+    <state width="1809" height="268" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" />
+    <state width="1809" height="268" key="GridCell.Tab.0.right" />
+    <state width="1809" height="268" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph1.java</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph.java</url>
-          <line>208</line>
-          <option name="timeStamp" value="27" />
+          <line>332</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GraphTests.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Graph.java</url>
+          <line>578</line>
+          <properties class="Graph" method="floydWarshall">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="e" />
+        <watch expression="this.edgelist.get(0).First" />
       </configuration>
     </watches-manager>
   </component>

@@ -17,6 +17,7 @@ public class GraphTests {
         */
         //New Stuff with Edges and Vertices
         //Testing basic stuff:
+        System.out.println("Testing some basics Graph Operations..... To see Basic functions are working");
         Edge e  = new Edge(1,2);
         Edge e2 = new Edge(1,2);
         System.out.println(e.equals(e2));
@@ -74,12 +75,12 @@ public class GraphTests {
         System.out.println("BFS für primkruskal");
        // g6.BFS(1);
         System.out.println("Hier beginnt DFS!");
-        g6.DFS(1,4);
+        g6.DFS(0,3);
         System.out.println("_______________________________________TEST_______________________________");
         Graph g15 = new Graph(file3,true);
         g15.BFS(1);
         g15.saveGraphsearch("Testgraph");
-        g15.DFS(1,4);
+        g15.DFS(0,3);
         g15.SSC();
 
         System.out.println("_____");
@@ -102,31 +103,6 @@ public class GraphTests {
             add(new Edge(5,2));
             add(new Edge(5,0));
         }});
-       /* g7.createAdjMatrix();
-        g7.printAdjMatrix();
-        g7.DFS(5,1);
-        g7.topologicalSort();
-        Graph g8 = g7.transpose();
-        g8.createAdjMatrix();
-        g8.printAdjMatrix();
-        System.out.println("________");
-        Graph g9 = new Graph();
-        g9.addVertex(new Vertex(0)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(0,2));
-            add(new Edge(0,3));
-        }});
-        g9.addVertex(new Vertex(1)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(1,0));
-        }});
-        g9.addVertex(new Vertex(2)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(2,1));
-        }});
-        g9.addVertex(new Vertex(3)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(3,4));
-        }});
-        g9.addVertex(new Vertex(4));
-        System.out.println("SSC________________");
-        g9.SSC();*/
         //Prim Kruskal
         System.out.println("KruskalTEST_________________________________________________:");
         Graph g10 = new Graph(file2,true);
@@ -137,14 +113,6 @@ public class GraphTests {
         Graph g11 = new Graph(file2,true);
         g11.Prim();
         g11.saveGraph("Prim");
-       /* g11.addVertex(new Vertex(0)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(0,1,4));
-            add(new Edge(0,7,8));
-        }});
-        g11.addVertex(new Vertex(1)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(1,0,4));
-            add(new Edge(0,7,8));
-        }});*/
        //Shortest Path
         System.out.println("Bellmann");
         File fbellmann = new File("./src/bellmannford.txt");
@@ -161,6 +129,7 @@ public class GraphTests {
         g14.dijkstra(1);
 
         //Big graph tests
+        System.out.println("TEST SPIDER");
         /*File spider = new File("./src/spider.txt");
         Graph gspider = new Graph(spider,true);
         gspider.createEdgeList();
@@ -175,7 +144,7 @@ public class GraphTests {
         grid.Kruskal();
         //Grid topo
         System.out.println("________________Grid DSF_________________");
-        grid.DFS(1,2400);
+        grid.DFS(0,3);
         System.out.println("__________________Grid Topsorted____________________________");
         grid.printTopsortedList();
         System.out.println("_________________________GRID SSC________________________________");

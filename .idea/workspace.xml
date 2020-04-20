@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e2c6ed-b2bc-4207-b8ed-ae802e6f86b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GridBFS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gridBFS.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SSC.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dijkstra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tgraph.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kruskal.dot" beforeDir="false" afterPath="$PROJECT_DIR$/Kruskal.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Graph1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$12.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$4.class" afterDir="false" />
@@ -22,13 +11,8 @@
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests$9.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphen/GraphTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/GraphTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphen/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphen/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +156,7 @@
       <workItem from="1586507162109" duration="4221000" />
       <workItem from="1587290035686" duration="7073000" />
       <workItem from="1587327487054" duration="18281000" />
-      <workItem from="1587382601801" duration="10340000" />
+      <workItem from="1587382601801" duration="13599000" />
     </task>
     <task id="LOCAL-00001" summary="Added Last changes">
       <created>1587372877643</created>
@@ -181,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587372877643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added final changes">
+      <created>1587392967021</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587392967021</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Last changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Last changes" />
+    <MESSAGE value="Added final changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added final changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="838" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
@@ -227,13 +219,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GraphTests.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="94" />
+          <line>146</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GraphTests.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="95" />
+          <line>152</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

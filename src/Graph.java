@@ -370,13 +370,6 @@ public class Graph
         }
         public void SSC()
         {
-            /*Stack s = new Stack();
-            for(int i = 0; i < this.V; i++)
-            {
-                if(!this.vertexlist.get(i).visited) {
-                    this.SSCutil(i, s);
-                }
-            }*/
             this.DFS(1,2);
             Graph g = this.transpose();
             g.setUnvisitedNodes();
@@ -475,16 +468,6 @@ public class Graph
     public void Prim()
     {
         ArrayList<Edge> elist = new ArrayList<>();
-       /* Graph sptree = new Graph(this.vertexlist.size());
-        PriorityQueue<Vertex> queue = new PriorityQueue<>();
-        for(Vertex v: this.vertexlist)
-        {
-            if(v == this.root){
-                queue.offer()
-            }
-            queue.offer(v)
-        }
-        return sptree;*/
        this.createAdjMatrixWeighted();
        this.printAdjMatrix();
        Graph sptree = new Graph(this.vertexlist.size());

@@ -85,28 +85,9 @@ public class GraphTests {
 
         System.out.println("_____");
 
-        //topological search
-        Graph g7 = new Graph();
-        g7.addVertex(new Vertex(0));
-        g7.addVertex(new Vertex(1));
-        g7.addVertex(new Vertex(2)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(2,3));
-        }});
-        g7.addVertex(new Vertex(3)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(3,1));
-        }});
-        g7.addVertex(new Vertex(4)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(4,1));
-            add(new Edge(4,0));
-        }});
-        g7.addVertex(new Vertex(5)).addListOfEdge(new ArrayList<Edge>() {{
-            add(new Edge(5,2));
-            add(new Edge(5,0));
-        }});
         //Prim Kruskal
         System.out.println("KruskalTEST_________________________________________________:");
         Graph g10 = new Graph(file2,true);
-        g7.createEdgeList();
         g10.Kruskal();
         System.out.println("____");
         System.out.println("PrimTEST______________________________________________________");
@@ -129,13 +110,16 @@ public class GraphTests {
         g14.dijkstra(1);
 
         //Big graph tests
+        //Delete comment plz if u wanna test Spider!
+        /*
         System.out.println("TEST SPIDER");
-        /*File spider = new File("./src/spider.txt");
+        File spider = new File("./src/spider.txt");
         Graph gspider = new Graph(spider,true);
+        System.out.println("__________________SPIDERDFS__________________");
         gspider.createEdgeList();
-        gspider.BFS(1);
-        gspider.saveGraphsearch("SpiderBFS");*/
-       // gspider.Kruskal();
+        gspider.DFS(0,49);
+        System.out.println("_____________________SPIDERBELLMANN");
+        gspider.bellmanFord(1);*/
         File ggrid = new File("./src/grid.txt");
         Graph grid = new Graph(ggrid,true);
         //grid.bellmanFord(1);
@@ -156,7 +140,6 @@ public class GraphTests {
         System.out.println("___________________________Grid Bellmann___________________");
         grid.bellmanFord(2400);
 
-        // Dot output is enables for BFS, Prim, Kruskal and DFS
 
 
 
